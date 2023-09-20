@@ -1,0 +1,151 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url('https://i.ibb.co/W0JsHy8/Ingresa-un-numero-4000-2000-px.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1{
+  font-weight: bolder;
+  font-size: 50px;
+  color: #dfd9d9;
+}
+
+
+.cal-p{
+  padding: 5px;
+  /* border: 1px solid darkcyan; */
+  display: flex;
+}
+
+.input-wrapper input {
+  background-color: #eee;
+  border: none;
+  padding: 0.8rem;
+  font-size: 1rem;
+  width: 11em;
+  border-radius: 1rem;
+  color: lightcoral;
+  box-shadow: 0 0.4rem #dfd9d9;
+  cursor: pointer;
+  margin: 10px;
+}
+
+label{
+  /* border: 1px solid red; */
+  width: 200px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  background-color: #e3edf7;
+  box-shadow: 0 0.3rem #bababa;
+  font-weight: bold;
+  font-size: 20px
+}
+
+.input-wrapper input:focus {
+  outline-color: rgb(33, 170, 255);
+}
+
+.main-p{
+  /* border: 1px solid red; */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  padding: 10px;
+  /* border: 1px solid red; */
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.operaciones{
+  /* border: 1px solid forestgreen; */
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+
+.btn {
+  
+  display: grid;
+  place-items: center;
+  background: #e3edf7;
+  margin: 5px;
+  padding: 1.4em;
+  border-radius: 10px;
+  box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+	      -6px -6px 10px -1px rgba(255,255,255,0.3);
+  border: 1px solid rgba(0,0,0,0);
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+.btn:hover {
+  box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+	      inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+	      -0.5px -0.5px 0px rgba(255,255,255,1),
+	      0.5px 0.5px 0px rgba(0,0,0,0.15),
+	      0px 12px 10px -10px rgba(0,0,0,0.05);
+  border: 1px solid rgba(0,0,0,0.1);
+  transform: translateY(0.5em);
+}
+
+.btn svg {
+  transition: transform 0.5s;
+}
+
+.btn:hover svg {
+  transform: scale(0.9);
+  fill: #333333;
+}
+
+
+@media screen and (max-width: 770px) {
+
+h1{
+  font-size: 30px;
+}
+
+.calculator{
+  /* border: 1px solid red; */
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.main-p{
+  /* border: 1px solid red; */
+  height: 100vh;
+}
+
+.cal-p{
+  /* border: 1px solid forestgreen; */
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+}
